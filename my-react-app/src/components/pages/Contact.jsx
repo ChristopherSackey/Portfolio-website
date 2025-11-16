@@ -1,5 +1,5 @@
 import { ThemeContext } from "../../ThemeContext";
-import { useContext, useEffect, useState } from "react";
+import { useContext, useState } from "react";
 import { FiPhoneCall } from "react-icons/fi";
 import { MdOutlineMail } from "react-icons/md";
 import { CiLocationOn } from "react-icons/ci";
@@ -134,12 +134,12 @@ const sendEmail = (e) => {
 
                                 <div className="flex flex-col gap-1 mt-5">
                                     <label htmlFor="name">Email</label>
-                                    <input type="text" className="border md:pl-3 md:pr-10 md:py-1.5  rounded" placeholder="Your email" onChange={handleInput} name="email" value={contact.email} />    
+                                    <input type="text" className="border pl-3 md:pr-10 md:py-1.5  rounded" placeholder="Your email" onChange={handleInput} name="email" value={contact.email} />    
                                 </div>
 
                             </div>
 
-                            <div className="flex gap-1 mt-5 md:flex-col">
+                            <div className="flex flex-col gap-1 mt-5 md:flex-col">
                                 <label htmlFor="message">Message</label>
                                 <textarea placeholder="Your message" className="border px-3 pt-1 rounded border-gray-200" name="message" id="message" cols="30" rows="6" resize="none" onChange={handleInput} value={contact.message}></textarea>
                             </div>
