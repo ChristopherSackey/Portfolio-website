@@ -4,6 +4,8 @@ export const ThemeContext = createContext();
 
 export const useTheme = () => useContext(ThemeContext);
 
+
+
 // export const ThemeProvider = ({children}) => {
 //     const [theme, setTheme] = useState(() => {
 //         const store = localStorage.getItem("theme");
@@ -26,3 +28,4 @@ export const useTheme = () => useContext(ThemeContext);
 //         </ThemeContext.Provider>
 //     )
 // }
+

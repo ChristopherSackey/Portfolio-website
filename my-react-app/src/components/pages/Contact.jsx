@@ -90,7 +90,7 @@ const sendEmail = (e) => {
     return <div>
         <section className={`pb-10 mt-15 md:mt-20 ${theme ? 'bg-[#111111]' : 'bg-gray-50'}`}  id="contact">
             <div className="max-w-[1200px] mx-auto px-7  outline: 2px solid red;" >
-                <div className="" >
+                <div className="py-2" >
                     <h1 className="text-center md:text-center text-3xl font-bold">Get In Touch</h1>
                     <div className={`w-16 h-1 mx-auto mt-1 rounded ${theme ? 'bg-white' : 'bg-black'}`}></div>
                     <p className=" md:text-center md:mt-5 text-[18px] text-gray-500">From big projects to simple hellos—I'm just a message away. </p>
@@ -123,7 +123,7 @@ const sendEmail = (e) => {
                         </div>
                     </div>
 
-                    <div className={`py-2 px-10 border shadow rounded  md:min-w-[700px] ${theme ? 'bg-black text-gray-400' : 'bg-white border-gray-300'}`}>
+                    <div className={`py-5 px-10 border shadow rounded pb-10 md:pb-5 md:min-w-[700px] ${theme ? 'bg-black text-gray-400' : 'bg-white border-gray-300'}`}>
                         <form onSubmit={sendEmail} >
                             <div className="flex flex-col md:flex">
 
